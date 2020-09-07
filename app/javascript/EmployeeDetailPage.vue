@@ -16,6 +16,7 @@
     <dd>{{ employee.payment }}</dd>
     <dt>Note</dt>
     <dd>{{ employee.note }}</dd>
+    <router-link :to="{ name: 'EmployeeEditPage', params: { id: employee.id } }"><button >編集</button></router-link>
   </dl>
 </template>
 
